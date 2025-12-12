@@ -5,7 +5,7 @@ abstract class AppDarkColors {
 
   static Color get primaryColor => const Color(0xFF16251E);
 
-  static Color get secondaryColor => const Color(0xFF0E1C15);
+  static Color get secondaryColor => const Color(0xFF112117);
 
   static Color get thirdColor => const Color(0xFF00E377);
 
@@ -42,6 +42,7 @@ abstract class AppDarkColors {
   static Color get black12Color => Colors.black12;
 
   static Color get greyColor => Colors.grey;
+  static Color get greyColor2 => const Color(0xFF1C2620);
 
   static Color get greenColor => Colors.green;
 

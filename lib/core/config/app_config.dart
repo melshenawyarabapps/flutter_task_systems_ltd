@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
@@ -17,7 +18,10 @@ class AppConfig {
     FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
     setUp();
     Bloc.observer = BlocLifecycleObserver.instance;
-    await Future.wait([getIt.get<CacheService>().init()]);
+    await Future.wait([
+      EasyLocalization.ensureInitialized(),
+      getIt.get<CacheService>().init(),
+    ]);
     FlutterNativeSplash.remove();
   }
 }

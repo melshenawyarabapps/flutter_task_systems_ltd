@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_task_systems_ltd/core/utils/font_sizes.dart';
 import 'package:flutter_task_systems_ltd/core/utils/font_weights.dart';
 
-class AppStyles {
+abstract class AppStyles {
   static TextStyle _getTextStyle(
     double fontSize,
     FontWeight fontWeight,

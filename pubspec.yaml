@@ -40,9 +40,13 @@ dev_dependencies:
   mockito: ^5.4.4
   flutter_launcher_icons: ^0.14.4
 
+flutter_assets_generator:
+  output_dir: core/generated
+
 flutter:
   uses-material-design: true
-
-
-assets:
-  - assets/icons/
+  generate: true
+  assets:
+    - assets/
+    - assets/icons/
+    - assets/translations/

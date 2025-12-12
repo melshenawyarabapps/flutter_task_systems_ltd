@@ -1,6 +1,6 @@
 // DO NOT EDIT. This is code generated via package:easy_localization/generate.dart
 
-// ignore_for_file: prefer_single_quotes
+// ignore_for_file: prefer_single_quotes, avoid_renaming_method_parameters, constant_identifier_names
 
 import 'dart:ui';
 
@@ -25,6 +25,10 @@ class CodegenLoader extends AssetLoader {
         "خطأ فى الاتصال، يرجى المحاولة مرة أخرى لاحقًا.",
     LocaleKeys.oppsAnUnexpectedErrorOccurredPleaseTryAgainLater:
         "عفوًا، حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى لاحقًا",
+    LocaleKeys.requestHasBeenCancelledPleaseTryAgainLater:
+        "تم إلغاء الطلب، يرجى المحاولة مرة أخرى لاحقًا.",
+    LocaleKeys.products: "المنتجات",
+    LocaleKeys.productDetails: "تفاصيل المنتج",
   };
 
   static const Map<String, dynamic> en = {};

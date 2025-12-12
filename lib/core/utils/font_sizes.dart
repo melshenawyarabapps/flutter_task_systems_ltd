@@ -1,6 +1,6 @@
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class FontSizes {
+abstract class FontSizes {
 
   static double get s6 => 6.sp;
 

@@ -1,4 +1,6 @@
-// DO NOT EDIT. This is code generated via package:easyLocalization/generate.dart
+// DO NOT EDIT. This is code generated via package:easy_localization/generate.dart
+
+// ignore_for_file: constant_identifier_names
 
 abstract class LocaleKeys {
   static const networkError = 'networkError';
@@ -13,5 +15,6 @@ abstract class LocaleKeys {
       "requestHasBeenCancelledPleaseTryAgainLater";
   static const String oppsAnUnexpectedErrorOccurredPleaseTryAgainLater =
       "oppsAnUnexpectedErrorOccurredPleaseTryAgainLater";
-
+  static const String products = "products";
+  static const String productDetails = "productDetails";
 }

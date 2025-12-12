@@ -6,7 +6,85 @@ import 'package:flutter_task_systems_ltd/core/utils/app_styles.dart';
 import 'package:flutter_task_systems_ltd/core/utils/font_sizes.dart';
 
 abstract class AppTheme {
-  static ThemeData get lightTheme => ThemeData();
+  static ThemeData get lightTheme => ThemeData(
+    brightness: Brightness.light,
+    scaffoldBackgroundColor: AppLightColors.secondaryColor,
+    primaryColor: AppLightColors.primaryColor,
+    secondaryHeaderColor: AppLightColors.secondaryColor,
+    splashColor: AppLightColors.transparent,
+    highlightColor: AppLightColors.transparent,
+    cardColor: AppLightColors.thirdColor,
+    shadowColor: AppLightColors.greyColor,
+    hoverColor: AppLightColors.black12Color,
+    appBarTheme: AppBarTheme(
+      backgroundColor: AppLightColors.primaryColor,
+      surfaceTintColor: AppLightColors.secondaryColor,
+      centerTitle: true,
+      elevation: 0,
+      iconTheme: IconThemeData(color: AppLightColors.blackColor),
+      titleTextStyle: AppStyles.getBoldStyle(
+        color: AppLightColors.blackColor,
+        fontSize: FontSizes.s18,
+      ),
+    ),
+    extensions: [
+      AppDecorations(
+        cardDecoration: BoxDecoration(
+          color: AppLightColors.greyColor3,
+          borderRadius: AppRadius.all(AppRadius.r16),
+          border: Border.all(color: AppLightColors.black10Color),
+        ),
+        imageDecoration: BoxDecoration(
+          borderRadius: AppRadius.all(AppRadius.r12),
+          border: Border.all(color: AppLightColors.black10Color),
+        ),
+        bigCardDecoration: BoxDecoration(
+          color: AppLightColors.secondaryColor,
+          borderRadius: AppRadius.vertical(AppRadius.r32),
+        ),
+      ),
+      FavoriteColors(
+        active: AppLightColors.redColor,
+        inactive: AppLightColors.black54Color,
+        activeBackground: AppLightColors.redColor10,
+        inactiveBackground: AppLightColors.black10Color,
+        activeBorder: AppLightColors.black10Color,
+        inactiveBorder: AppLightColors.black10Color,
+      ),
+      ConnectivityColors(
+        onlineColor: AppLightColors.greenColor,
+        offlineColor: AppLightColors.redColor,
+        onlineBackgroundColor: AppLightColors.greenColor.withValues(alpha: 0.2),
+        offlineBackgroundColor: AppLightColors.redColor.withValues(alpha: 0.2),
+        onlineBorderColor: AppLightColors.greenColor,
+        offlineBorderColor: AppLightColors.redColor,
+      ),
+      ShimmerColors(
+        baseColor: AppLightColors.greyColor2,
+        highlightColor: AppLightColors.greyColor3,
+        placeholderColor: AppLightColors.greyColor2,
+        placeholderDecoration: BoxDecoration(
+          color: AppLightColors.greyColor2,
+          borderRadius: AppRadius.all(AppRadius.r6),
+        ),
+      ),
+    ],
+    textTheme: TextTheme(
+      bodyLarge: AppStyles.getBoldStyle(
+        color: AppLightColors.blackColor,
+        fontSize: FontSizes.s14,
+      ),
+      bodyMedium: AppStyles.getSemiBoldStyle(
+        color: AppLightColors.thirdColor,
+        fontSize: FontSizes.s14,
+      ),
+      bodySmall: AppStyles.getMediumStyle(
+        color: AppLightColors.black54Color,
+        fontSize: FontSizes.s12,
+      ),
+    ),
+    dividerTheme: DividerThemeData(color: AppLightColors.black26Color),
+  );
 
   static ThemeData get darkTheme => ThemeData(
     scaffoldBackgroundColor: AppDarkColors.secondaryColor,
@@ -51,6 +129,23 @@ abstract class AppTheme {
         inactiveBackground: AppDarkColors.white10Color,
         activeBorder: AppDarkColors.white10Color,
         inactiveBorder: AppDarkColors.white10Color,
+      ),
+      ConnectivityColors(
+        onlineColor: AppDarkColors.greenColor,
+        offlineColor: AppDarkColors.redColor,
+        onlineBackgroundColor: AppDarkColors.greenColor.withValues(alpha: 0.2),
+        offlineBackgroundColor: AppDarkColors.redColor.withValues(alpha: 0.2),
+        onlineBorderColor: AppDarkColors.greenColor,
+        offlineBorderColor: AppDarkColors.redColor,
+      ),
+      ShimmerColors(
+        baseColor: AppDarkColors.greyColor2,
+        highlightColor: AppDarkColors.white10Color,
+        placeholderColor: AppDarkColors.white10Color,
+        placeholderDecoration: BoxDecoration(
+          color: AppDarkColors.white10Color,
+          borderRadius: AppRadius.all(AppRadius.r6),
+        ),
       ),
     ],
     textTheme: TextTheme(

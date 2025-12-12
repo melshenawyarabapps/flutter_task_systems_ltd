@@ -1,13 +1,22 @@
 {
-
   "networkError": "الرجاء التحقق من اتصالك بالشبكة ومحاولة مرة أخرى",
   "unexpectedError": "خطأ غير متوقع",
   "sendTimeOutPleaseTryAgainLater": "يرجى إعادة المحاولة لاحقًا.",
-  "receiveTimeOutPleaseTryAgainLater":
-  "يرجى المحاولة مرة أخرى فى وقت لاحق.",
-  "connectionErrorPleaseTryAgainLater":
-  "خطأ فى الاتصال، يرجى المحاولة مرة أخرى لاحقًا.",
-  "oppsAnUnexpectedErrorOccurredPleaseTryAgainLater":
-  "عفوًا، حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى لاحقًا",
-  "products": "المنتجات"
+  "receiveTimeOutPleaseTryAgainLater": "يرجى المحاولة مرة أخرى فى وقت لاحق.",
+  "connectionErrorPleaseTryAgainLater": "خطأ فى الاتصال، يرجى المحاولة مرة أخرى لاحقًا.",
+  "requestHasBeenCancelledPleaseTryAgainLater": "تم إلغاء الطلب، يرجى المحاولة مرة أخرى لاحقًا.",
+  "oppsAnUnexpectedErrorOccurredPleaseTryAgainLater": "عفوًا، حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى لاحقًا",
+  "products": "المنتجات",
+  "productDetails": "تفاصيل المنتج",
+  "reviews": "التقييمات",
+  "description": "الوصف",
+  "errorLoadingProducts": "خطأ في تحميل المنتجات",
+  "retry": "إعادة المحاولة",
+  "noProducts": "لا توجد منتجات متاحة",
+  "noInternetConnection": "لا يوجد اتصال بالإنترنت",
+  "noInternetNoCachedData": "لا يوجد اتصال بالإنترنت ولا توجد بيانات مخزنة",
+  "productNotInCache": "لا يوجد اتصال بالإنترنت والمنتج غير موجود في التخزين المؤقت",
+  "errorLoadingProductDetails": "خطأ في تحميل تفاصيل المنتج",
+  "online": "متصل",
+  "offline": "غير متصل"
 }

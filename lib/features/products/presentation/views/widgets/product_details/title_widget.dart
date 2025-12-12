@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_task_systems_ltd/core/extensions/num_extensions.dart';
 import 'package:flutter_task_systems_ltd/core/utils/font_sizes.dart';
 
 class TitleWidget extends StatelessWidget {
-  const TitleWidget({super.key});
+  const TitleWidget({super.key, required this.title, required this.price});
+
+  final String title;
+  final double price;
 
   @override
   Widget build(BuildContext context) {
@@ -17,19 +21,14 @@ class TitleWidget extends StatelessWidget {
           children: [
             Flexible(
               child: Text(
-                'Neon Runner V2',
+                title,
                 style: textTheme.bodyLarge?.copyWith(fontSize: FontSizes.s20),
               ),
             ),
             8.horizontalSpace,
-            Text('\$120.00', style: textTheme.bodyMedium),
+            Text(price.formatPrice, style: textTheme.bodyMedium),
           ],
         ),
-        8.verticalSpace,
-        Text(
-          'Professional Running Gear',
-          style: textTheme.bodySmall?.copyWith(fontSize: FontSizes.s14),
-        )
       ],
     );
   }

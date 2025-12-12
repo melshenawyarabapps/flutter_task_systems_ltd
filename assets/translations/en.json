@@ -1,1 +1,22 @@
-{}
+{
+  "networkError": "Network error occurred",
+  "unexpectedError": "An unexpected error occurred",
+  "sendTimeOutPleaseTryAgainLater": "Send timeout. Please try again later",
+  "receiveTimeOutPleaseTryAgainLater": "Receive timeout. Please try again later",
+  "connectionErrorPleaseTryAgainLater": "Connection error. Please try again later",
+  "requestHasBeenCancelledPleaseTryAgainLater": "Request cancelled. Please try again later",
+  "oppsAnUnexpectedErrorOccurredPleaseTryAgainLater": "Oops! An unexpected error occurred. Please try again later",
+  "products": "Products",
+  "productDetails": "Product Details",
+  "reviews": "Reviews",
+  "description": "Description",
+  "errorLoadingProducts": "Error loading products",
+  "retry": "Retry",
+  "noProducts": "No products available",
+  "noInternetConnection": "No internet connection",
+  "noInternetNoCachedData": "No internet connection and no cached data available",
+  "productNotInCache": "No internet connection and product not found in cache",
+  "errorLoadingProductDetails": "Error loading product details",
+  "online": "Online",
+  "offline": "Offline"
+}

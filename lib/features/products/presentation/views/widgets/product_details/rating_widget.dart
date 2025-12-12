@@ -6,7 +6,14 @@ import 'package:flutter_task_systems_ltd/core/translations/locale_keys.g.dart';
 import 'package:flutter_task_systems_ltd/core/utils/app_padding.dart';
 
 class RatingWidget extends StatelessWidget {
-  const RatingWidget({super.key});
+  const RatingWidget({
+    super.key,
+    required this.rating,
+    required this.ratingCount,
+  });
+
+  final double rating;
+  final int ratingCount;
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +22,7 @@ class RatingWidget extends StatelessWidget {
     return Row(
       children: [
         RatingBar.builder(
-          initialRating: 3,
+          initialRating: rating,
           ignoreGestures: true,
           minRating: 1,
           direction: Axis.horizontal,
@@ -27,9 +34,12 @@ class RatingWidget extends StatelessWidget {
           onRatingUpdate: (rating) {},
         ),
         8.horizontalSpace,
-        Text('4.8', style: textTheme.bodyLarge),
+        Text(rating.toStringAsFixed(1), style: textTheme.bodyLarge),
         4.horizontalSpace,
-        Text('(128 ${LocaleKeys.reviews.tr()})', style: textTheme.bodySmall),
+        Text(
+          '($ratingCount ${LocaleKeys.reviews.tr()})',
+          style: textTheme.bodySmall,
+        ),
       ],
     );
   }

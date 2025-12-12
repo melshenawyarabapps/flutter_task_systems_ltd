@@ -5,7 +5,9 @@ import 'package:flutter_task_systems_ltd/core/translations/locale_keys.g.dart';
 import 'package:flutter_task_systems_ltd/core/utils/font_sizes.dart';
 
 class DescriptionWidget extends StatelessWidget {
-  const DescriptionWidget({super.key});
+  const DescriptionWidget({super.key, required this.description});
+
+  final String description;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +22,7 @@ class DescriptionWidget extends StatelessWidget {
         ),
         8.verticalSpace,
         Text(
-          'Engineered for the urban night runner. The Neon Runner V2 features our proprietary luminous mesh technology for maximum visibility and breathability. The responsive foam sole adapts to your stride.',
+          description,
           style: textTheme.bodySmall?.copyWith(fontSize: FontSizes.s14),
         ),
       ],

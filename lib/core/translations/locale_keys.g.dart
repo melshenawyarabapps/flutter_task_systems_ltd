@@ -18,4 +18,5 @@ abstract class LocaleKeys {
   static const String products = "products";
   static const String productDetails = "productDetails";
   static const String reviews = "reviews";
+  static const String description = "description";
 }

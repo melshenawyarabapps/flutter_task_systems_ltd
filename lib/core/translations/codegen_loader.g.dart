@@ -30,6 +30,7 @@ class CodegenLoader extends AssetLoader {
     LocaleKeys.products: "المنتجات",
     LocaleKeys.productDetails: "تفاصيل المنتج",
     LocaleKeys.reviews: "التقيمات",
+    LocaleKeys.description: "الوصف : ",
   };
 
   static const Map<String, dynamic> en = {};

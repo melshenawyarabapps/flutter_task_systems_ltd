@@ -1,5 +1,7 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_task_systems_ltd/core/translations/locale_keys.g.dart';
 import 'package:flutter_task_systems_ltd/core/utils/font_sizes.dart';
 
 class DescriptionWidget extends StatelessWidget {
@@ -13,7 +15,7 @@ class DescriptionWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Description',
+          LocaleKeys.description.tr(),
           style: textTheme.bodyLarge?.copyWith(fontSize: FontSizes.s16),
         ),
         8.verticalSpace,

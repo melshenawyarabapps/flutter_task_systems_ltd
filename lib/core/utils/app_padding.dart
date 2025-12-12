@@ -8,13 +8,8 @@ abstract class AppPadding {
   static EdgeInsets horizontalPadding(double width) =>
       EdgeInsets.symmetric(horizontal: width).w;
 
-
-  static EdgeInsets hvPadding({
-    double height = 0.0,
-    double width = 0.0,
-}) =>
-      EdgeInsets.symmetric(horizontal: width.w,vertical: height.h);
-
+  static EdgeInsets hvPadding({double height = 0.0, double width = 0.0}) =>
+      EdgeInsets.symmetric(horizontal: width.w, vertical: height.h);
 
   static EdgeInsets get zero => EdgeInsets.zero;
 
@@ -36,6 +31,8 @@ abstract class AppPadding {
     start: all.w,
     end: all.w,
   );
+
+  static double get p2 => 2;
 
   static double get p4 => 4;
 

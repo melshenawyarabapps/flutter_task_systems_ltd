@@ -4,6 +4,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 abstract class AppRadius {
   static BorderRadius all(double radius) =>
       BorderRadius.all(Radius.circular(radius));
+  static BorderRadius vertical(double radius) =>
+      BorderRadius.vertical(top:Radius.circular(radius));
 
   static double get r6 => 6.r;
 
@@ -44,4 +46,5 @@ abstract class AppRadius {
   static double get r24 => 24.r;
 
   static double get r30 => 30.r;
+  static double get r32 => 32.r;
 }

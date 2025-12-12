@@ -29,6 +29,7 @@ class CodegenLoader extends AssetLoader {
         "تم إلغاء الطلب، يرجى المحاولة مرة أخرى لاحقًا.",
     LocaleKeys.products: "المنتجات",
     LocaleKeys.productDetails: "تفاصيل المنتج",
+    LocaleKeys.reviews: "التقيمات",
   };
 
   static const Map<String, dynamic> en = {};

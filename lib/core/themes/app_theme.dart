@@ -39,6 +39,18 @@ abstract class AppTheme {
           borderRadius: AppRadius.all(AppRadius.r12),
           border: Border.all(color: AppDarkColors.white10Color),
         ),
+        bigCardDecoration: BoxDecoration(
+          color: AppDarkColors.secondaryColor,
+          borderRadius: AppRadius.vertical(AppRadius.r32),
+        ),
+      ),
+      FavoriteColors(
+        active: AppDarkColors.redColor,
+        inactive: AppDarkColors.whiteColor,
+        activeBackground: AppDarkColors.redColor10,
+        inactiveBackground: AppDarkColors.white10Color,
+        activeBorder: AppDarkColors.white10Color,
+        inactiveBorder: AppDarkColors.white10Color,
       ),
     ],
     textTheme: TextTheme(
@@ -55,5 +67,6 @@ abstract class AppTheme {
         fontSize: FontSizes.s12,
       ),
     ),
+    dividerTheme: DividerThemeData(color: AppDarkColors.white24Color),
   );
 }

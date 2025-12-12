@@ -42,9 +42,12 @@ abstract class AppDarkColors {
   static Color get black12Color => Colors.black12;
 
   static Color get greyColor => Colors.grey;
+
   static Color get greyColor2 => const Color(0xFF1C2620);
 
   static Color get greenColor => Colors.green;
 
   static Color get redColor => Colors.red;
+
+  static Color get redColor10 => Colors.red.withValues(alpha: 0.1);
 }

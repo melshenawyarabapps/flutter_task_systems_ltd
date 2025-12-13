@@ -1,4 +1,4 @@
-import 'package:flutter_task_systems_ltd/core/services/api/api_errors.dart';
+import 'package:flutter_task_systems_ltd/core/errors/app_exceptions.dart';
 import 'package:flutter_task_systems_ltd/core/services/api/api_service.dart';
 import 'package:flutter_task_systems_ltd/core/utils/end_points.dart';
 import 'package:flutter_task_systems_ltd/features/products/data/models/product_model.dart';
@@ -39,7 +39,7 @@ class ProductRemoteDataSourceImpl implements ProductRemoteDataSource {
     }
   }
 
-  Failure _handleError(error) {
-    return ServerFailure.generalException(error);
+  AppException _handleError(dynamic error) {
+    return ServerException.fromException(error);
   }
 }

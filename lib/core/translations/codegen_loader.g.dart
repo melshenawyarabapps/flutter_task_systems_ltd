@@ -5,7 +5,6 @@
 import 'dart:ui';
 
 import 'package:easy_localization/easy_localization.dart' show AssetLoader;
-import 'package:flutter_task_systems_ltd/core/translations/locale_keys.g.dart';
 
 class CodegenLoader extends AssetLoader {
   const CodegenLoader();

@@ -40,6 +40,7 @@ dev_dependencies:
   hive_generator: ^2.0.1
   build_runner: ^2.4.7
   mockito: ^5.4.4
+  bloc_test: ^10.0.0
   flutter_launcher_icons: ^0.14.4
 
 flutter_assets_generator:

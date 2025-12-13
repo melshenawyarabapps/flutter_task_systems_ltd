@@ -19,12 +19,8 @@ class ProductRemoteDataSourceImpl implements ProductRemoteDataSource {
     try {
       final response = await _apiService.get(endPoint: EndPoints.products);
 
-      if (response.statusCode == 200) {
-        final List<dynamic> data = response.data;
-        return data.map((json) => ProductModel.fromJson(json)).toList();
-      } else {
-        throw Exception('Failed to load products');
-      }
+      final List<dynamic> data = response.data;
+      return data.map((json) => ProductModel.fromJson(json)).toList();
     } catch (e) {
       throw _handleError(e);
     }
@@ -37,11 +33,7 @@ class ProductRemoteDataSourceImpl implements ProductRemoteDataSource {
         endPoint: '${EndPoints.products}/$id',
       );
 
-      if (response.statusCode == 200) {
-        return ProductModel.fromJson(response.data);
-      } else {
-        throw Exception('Failed to load product details');
-      }
+      return ProductModel.fromJson(response.data);
     } catch (e) {
       throw _handleError(e);
     }

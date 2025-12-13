@@ -78,7 +78,7 @@ class ProductLocalDataSourceImpl implements ProductLocalDataSource {
 
   @override
   Future<bool> isFavorite(int productId) async {
-    return await _cacheService.containsKey(
+    return await _cacheService.containsKey<int>(
       boxName: AppConstants.favoritesBoxName,
       key: productId,
     );

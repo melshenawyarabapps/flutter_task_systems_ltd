@@ -8,6 +8,7 @@ import 'package:flutter_task_systems_ltd/features/products/domain/usecases/is_fa
 import 'package:flutter_task_systems_ltd/features/products/domain/usecases/toggle_favorite.dart';
 
 part 'favorite_event.dart';
+
 part 'favorite_state.dart';
 
 class FavoriteBloc extends Bloc<FavoriteEvent, FavoriteState> {
@@ -43,6 +44,7 @@ class FavoriteBloc extends Bloc<FavoriteEvent, FavoriteState> {
 
       case FavoriteEventType.toggleFavorite:
         try {
+          emit(state.copyWith(status: RequestStatus.loading));
           await toggleFavorite(event.productId!);
           final isFav = await isFavorite(event.productId!);
           emit(state.copyWith(status: RequestStatus.loaded, isFavorite: isFav));

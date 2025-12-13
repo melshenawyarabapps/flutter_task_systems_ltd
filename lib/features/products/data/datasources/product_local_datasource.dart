@@ -33,7 +33,7 @@ class ProductLocalDataSourceImpl implements ProductLocalDataSource {
 
   @override
   Future<void> cacheProducts(List<ProductModel> products) async {
-    await _cacheService.clear(boxName: AppConstants.productsBoxName);
+    await _cacheService.clear<ProductModel>(boxName: AppConstants.productsBoxName);
     for (var product in products) {
       await _cacheService.put<ProductModel>(
         boxName: AppConstants.productsBoxName,

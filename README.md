@@ -98,7 +98,7 @@ graph TB
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/melshenawyarabapps/flutter_task_sys_ltd.git
+   git clone https://github.com/melshenawyarabapps/flutter_task_systems_ltd
    cd flutter_task_sys_ltd
    ```
 

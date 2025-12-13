@@ -16,24 +16,60 @@ class CodegenLoader extends AssetLoader {
   }
 
   static const Map<String, dynamic> ar = {
-    LocaleKeys.networkError: "الرجاء التحقق من اتصالك بالشبكة ومحاولة مرة أخرى",
-    LocaleKeys.unexpectedError: "خطأ غير متوقع",
-    LocaleKeys.sendTimeOutPleaseTryAgainLater: "يرجى إعادة المحاولة لاحقًا.",
-    LocaleKeys.receiveTimeOutPleaseTryAgainLater:
-        "يرجى المحاولة مرة أخرى فى وقت لاحق.",
-    LocaleKeys.connectionErrorPleaseTryAgainLater:
+    "networkError": "الرجاء التحقق من اتصالك بالشبكة ومحاولة مرة أخرى",
+    "unexpectedError": "خطأ غير متوقع",
+    "sendTimeOutPleaseTryAgainLater": "يرجى إعادة المحاولة لاحقًا.",
+    "receiveTimeOutPleaseTryAgainLater": "يرجى المحاولة مرة أخرى فى وقت لاحق.",
+    "connectionErrorPleaseTryAgainLater":
         "خطأ فى الاتصال، يرجى المحاولة مرة أخرى لاحقًا.",
-    LocaleKeys.oppsAnUnexpectedErrorOccurredPleaseTryAgainLater:
-        "عفوًا، حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى لاحقًا",
-    LocaleKeys.requestHasBeenCancelledPleaseTryAgainLater:
+    "requestHasBeenCancelledPleaseTryAgainLater":
         "تم إلغاء الطلب، يرجى المحاولة مرة أخرى لاحقًا.",
-    LocaleKeys.products: "المنتجات",
-    LocaleKeys.productDetails: "تفاصيل المنتج",
-    LocaleKeys.reviews: "التقيمات",
-    LocaleKeys.description: "الوصف : ",
+    "oppsAnUnexpectedErrorOccurredPleaseTryAgainLater":
+        "عفوًا، حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى لاحقًا",
+    "products": "المنتجات",
+    "productDetails": "تفاصيل المنتج",
+    "reviews": "التقييمات",
+    "description": "الوصف",
+    "errorLoadingProducts": "خطأ في تحميل المنتجات",
+    "retry": "إعادة المحاولة",
+    "noProducts": "لا توجد منتجات متاحة",
+    "noInternetConnection": "لا يوجد اتصال بالإنترنت",
+    "noInternetNoCachedData": "لا يوجد اتصال بالإنترنت ولا توجد بيانات مخزنة",
+    "productNotInCache":
+        "لا يوجد اتصال بالإنترنت والمنتج غير موجود في التخزين المؤقت",
+    "errorLoadingProductDetails": "خطأ في تحميل تفاصيل المنتج",
+    "online": "متصل",
+    "offline": "غير متصل",
   };
 
-  static const Map<String, dynamic> en = {};
+  static const Map<String, dynamic> en = {
+    "networkError": "Network error occurred",
+    "unexpectedError": "An unexpected error occurred",
+    "sendTimeOutPleaseTryAgainLater": "Send timeout. Please try again later",
+    "receiveTimeOutPleaseTryAgainLater":
+        "Receive timeout. Please try again later",
+    "connectionErrorPleaseTryAgainLater":
+        "Connection error. Please try again later",
+    "requestHasBeenCancelledPleaseTryAgainLater":
+        "Request cancelled. Please try again later",
+    "oppsAnUnexpectedErrorOccurredPleaseTryAgainLater":
+        "Oops! An unexpected error occurred. Please try again later",
+    "products": "Products",
+    "productDetails": "Product Details",
+    "reviews": "Reviews",
+    "description": "Description",
+    "errorLoadingProducts": "Error loading products",
+    "retry": "Retry",
+    "noProducts": "No products available",
+    "noInternetConnection": "No internet connection",
+    "noInternetNoCachedData":
+        "No internet connection and no cached data available",
+    "productNotInCache":
+        "No internet connection and product not found in cache",
+    "errorLoadingProductDetails": "Error loading product details",
+    "online": "Online",
+    "offline": "Offline",
+  };
 
   static const Map<String, Map<String, dynamic>> mapLocales = {
     "ar": ar,

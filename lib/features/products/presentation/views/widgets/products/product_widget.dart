@@ -20,8 +20,8 @@ class ProductWidget extends StatelessWidget {
     final textThemes = theme.textTheme;
 
     return InkWell(
-      onTap: (){
-        context.pushNamed(AppRoutes.productDetails,arguments: product.id);
+      onTap: () {
+        context.pushNamed(AppRoutes.productDetails, arguments: product.id);
       },
       child: Container(
         padding: AppPadding.all(AppPadding.p12),
@@ -33,6 +33,7 @@ class ProductWidget extends StatelessWidget {
               height: 80.h,
               decoration: decorations.imageDecoration,
               clipBehavior: Clip.antiAlias,
+              padding: AppPadding.all(AppPadding.p4),
               child: NetworkImageWidget(imageUrl: product.image),
             ),
             12.horizontalSpace,

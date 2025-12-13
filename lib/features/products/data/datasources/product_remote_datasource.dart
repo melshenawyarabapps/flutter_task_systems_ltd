@@ -19,7 +19,7 @@ class ProductRemoteDataSourceImpl implements ProductRemoteDataSource {
     try {
       final response = await _apiService.get(endPoint: EndPoints.products);
 
-      final List<dynamic> data = response.data;
+      final List<dynamic> data = response;
       return data.map((json) => ProductModel.fromJson(json)).toList();
     } catch (e) {
       throw _handleError(e);
@@ -33,7 +33,7 @@ class ProductRemoteDataSourceImpl implements ProductRemoteDataSource {
         endPoint: '${EndPoints.products}/$id',
       );
 
-      return ProductModel.fromJson(response.data);
+      return ProductModel.fromJson(response);
     } catch (e) {
       throw _handleError(e);
     }

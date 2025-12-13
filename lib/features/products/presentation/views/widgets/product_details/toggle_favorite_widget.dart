@@ -18,7 +18,7 @@ class ToggleFavoriteWidget extends StatelessWidget {
       builder: (context, state) {
         final bool isFavorite = state.isFavorite;
 
-        return GestureDetector(
+        return InkWell(
           onTap: () {
             context.read<FavoriteBloc>().add(
               FavoriteEvent(
